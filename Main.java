@@ -12,10 +12,13 @@ public class Main {
         while (running) {
 
             String input = reader.nextLine(); // Scannt den nächsten String
+            String message = input.toLowerCase();
 
-            if (input.contains("Hilfe")) { // Suche in der Frage nach diesem Wort
+            if (message.contains("hilfe")) { // Suche in der Frage nach diesem Wort
                 System.out.println("Ich versuche zu helfen.");
-            } else if (input.contains("ende")) {
+            } else if (message.contains("wlan")) {
+                System.out.println(Antworten.WLAN.getAntwort());
+            } else if (message.contains("ende")) {
                 reader.close();
                 break;
             } else {
