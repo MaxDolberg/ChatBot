@@ -22,10 +22,10 @@ public class Main {
                 System.out.println(Antworten.WLAN.getAntwort());
                 System.out.println("Hat Ihnen diese Antwort geholfen? \n 1 - Ja \n 2 - Nein");
 
-            } else if (message.contains("1")) {
+            } else if (message.equals("1")) {
                 System.out.println(Antworten.HELP.getAntwort());
 
-            } else if (message.contains("2")) {
+            } else if (message.equals("2")) {
                 System.out.println(Antworten.NO_HELP.getAntwort());
 
             } else if (message.contains("ende")) {
