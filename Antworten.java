@@ -5,7 +5,7 @@ public enum Antworten {
     HELP("Es freut mich, dass ich Ihnen helfen konnte. Ich wünsche einen guten Tag."),
     NO_HELP("Es tut mir leid, dass ich Ihnen nicht weiterhelfen konnte. Bitte kontaktieren Sie den Kundensupport unter folgender Nummer: 012 3456789"),
     WEITERLEITUNG("Bei dieser Frage kann ich leider nicht weiterhelfen. Bitte kontaktieren Sie den Kundensupport unter folgender Nummer: 012 3456789"),
-    TEST("Test");
+    TEST("Test1");
     
     private String antwort;
  
