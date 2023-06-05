@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         // Anlegen wichtiger Variablen
         Boolean running = true;
+        String jaNein = "Hat Ihnen diese Antwort geholfen? \n 1 - Ja \n 2 - Nein";
 
         System.out.println(Antworten.HALLO.getAntwort());
         Scanner reader = new Scanner(System.in);  // Erstellung eines neuen Scanner-Objektes
@@ -11,27 +12,32 @@ public class Main {
 
         while (running) {
 
-            String input = reader.nextLine(); // Scannt den nächsten String
+            // Lese die nächste Eingabe aus und wandle sie in Kleinbuchstaben um
+            String input = reader.nextLine();
             String message = input.toLowerCase();
 
-            if (message.contains("hilfe")) { // Suche in der Frage nach diesem Wort
-                System.out.println("Ich versuche zu helfen.");
-                System.out.println("Hat Ihnen diese Antwort geholfen? \n 1 - Ja \n 2 - Nein");
+            // Untersuchung der Nutzerantwort auf verschiedene Stichwörter
+            if (message.contains("Platzhalter")) {
+                System.out.println("Platzhalter");
+                System.out.println(jaNein);
 
             } else if (message.contains("wlan")) {
                 System.out.println(Antworten.WLAN.getAntwort());
-                System.out.println("Hat Ihnen diese Antwort geholfen? \n 1 - Ja \n 2 - Nein");
+                System.out.println(jaNein);
 
-            } else if (message.equals("1")) {
+            // Abfrage, ob der Nutzer mit Ja oder Nein auf die Fragen vom ChatBot antwortet
+            } else if (message.equals("1") || message.equals("ja")) {
                 System.out.println(Antworten.HELP.getAntwort());
 
-            } else if (message.equals("2")) {
+            } else if (message.equals("2") || message.equals("nein")) {
                 System.out.println(Antworten.NO_HELP.getAntwort());
 
+            // Stichwort zum Beenden des ChatBots
             } else if (message.contains("ende")) {
                 reader.close();
                 break;
                 
+            // Rückfall-Antwort, falls keines der Stichwörter greift
             } else {
                 System.out.println(Antworten.WEITERLEITUNG.getAntwort());
             }

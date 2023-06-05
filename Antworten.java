@@ -1,4 +1,5 @@
 public enum Antworten {
+    // Antworten, auf die der ChatBot zurückgreifen kann
     HALLO("Wilkommen! Ich bin der ChatBot der Solution GmbH. Wie kann ich Ihnen behilflich sein?"),
     WLAN("Wenn Sie Probleme mit dem WLAN haben, versuchen Sie den Router für 10 Minuten vom Strom zu nehmen."),
     HELP("Es freut mich, dass ich Ihnen helfen konnte. Ich wünsche einen guten Tag."),
