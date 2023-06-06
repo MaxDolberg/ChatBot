@@ -6,6 +6,7 @@ public enum Antworten {
     NO_HELP("Es tut mir leid, dass ich Ihnen nicht weiterhelfen konnte. Bitte kontaktieren Sie den Kundensupport unter folgender Nummer: 012 3456789"),
     WEITERLEITUNG("Bei dieser Frage kann ich leider nicht weiterhelfen. Bitte kontaktieren Sie den Kundensupport unter folgender Nummer: 012 3456789"),
     TEST("Test1");
+    BILDSCHIRM("Wenn Sie ein Problem mit Ihrem Bildschirm haben, sollten Sie am besten Ihren Monitor vom PC trennen und erneut anschließen.")
     
     private String antwort;
  
