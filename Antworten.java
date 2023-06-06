@@ -18,5 +18,4 @@ public enum Antworten {
         return antwort;
     }
 
-    //sfsfsfS
 }
