@@ -17,4 +17,6 @@ public enum Antworten {
     public String getAntwort() {
         return antwort;
     }
+
+    //sfsfsfS
 }
