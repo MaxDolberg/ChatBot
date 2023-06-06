@@ -25,6 +25,10 @@ public class Main {
                 System.out.println(Antworten.WLAN.getAntwort());
                 System.out.println(jaNein);
 
+            } else if (message.contains("bildschirm") || message.contains("monitor")) {
+                System.out.println(Antworten.BILDSCHIRM.getAntwort());
+                System.out.println(jaNein);
+
             // Abfrage, ob der Nutzer mit Ja oder Nein auf die Fragen vom ChatBot antwortet
             } else if (message.equals("1") || message.equals("ja")) {
                 System.out.println(Antworten.HELP.getAntwort());
