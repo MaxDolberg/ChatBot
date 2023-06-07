@@ -1,12 +1,14 @@
 public enum Antworten {
     // Antworten, auf die der ChatBot zurückgreifen kann
     HALLO("Wilkommen! Ich bin der ChatBot der Solution GmbH. Wie kann ich Ihnen behilflich sein?"),
-    WLAN("Wenn Sie Probleme mit dem WLAN haben, versuchen Sie den Router für 10 Minuten vom Strom zu nehmen."),
+    DRUCKER("Bitte überprüfen Sie zuerst, ob Sie den richtigen Drucker als Gerät ausgewählt haben. Manchmal können sich solche Einstellungen durch Updates verändern."),
+    DRUCKER2("Falls das nicht geholfen hat, dann schauen Sie bitte nach, ob noch genug Tinte und Papier verfügbar sind. Manchmal geben Drucker keine Meldung aus, obwohl Sie leer sind."),
+    WLAN("Wenn Sie Probleme mit dem WLAN haben, versuchen Sie, den Router für 10 Minuten vom Strom zu nehmen. Schließen Sie ihn danach wieder an und warten weiter 10 Minuten, bis er wieder vollständig läuft."),
     HELP("Es freut mich, dass ich Ihnen helfen konnte. Ich wünsche einen guten Tag."),
     NO_HELP("Es tut mir leid, dass ich Ihnen nicht weiterhelfen konnte. Bitte kontaktieren Sie den Kundensupport unter folgender Nummer: 012 3456789"),
     WEITERLEITUNG("Bei dieser Frage kann ich leider nicht weiterhelfen. Bitte kontaktieren Sie den Kundensupport unter folgender Nummer: 012 3456789"),
-    TEST("Test1"),
-    BILDSCHIRM("Wenn Sie ein Problem mit Ihrem Bildschirm haben, sollten Sie am besten Ihren Monitor vom PC trennen und erneut anschließen.");
+    BILDSCHIRM("Wenn Sie ein Problem mit Ihrem Bildschirm haben, sollten Sie am besten Ihren Monitor vom PC trennen und erneut anschließen."),
+    BILDSCHIRM2("Da die erste Lösung nicht geholfen hat, ziehen Sie den Stromstecker vom Monitor raus und warten Sie 10 Sekunden. Danach stecken Sie ihn bitte wieder ein und probieren es erneut.");
     
     private String antwort;
  
