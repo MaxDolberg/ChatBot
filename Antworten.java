@@ -12,7 +12,8 @@ public enum Antworten {
     TASTATUR("Wenn Sie ein Problem mit Ihrer Tastatur haben, entfernen Sie die Tastatur einmal von Ihrem PC für einige Zeit und schließen Sie die Tastatur erneut an"),
     TASTATUR2("Falls das nicht geholfen hat überprüfen sie ob Ihre Tastatur eine Baterrie benötigt und ob sie eingeschaltet ist."),
     MAUS("Wenn Sie ein Problem mit Ihrer Maus haben, entfernen Sie die Maus einmal von Ihrem PC für einige Zeit und schließen Sie die Maus erneut an"),
-    MAUS2("Falls das nicht geholfen hat überprüfen sie ob Ihre Maus eine Baterrie benötigt und ob sie eingeschaltet ist.");
+    MAUS2("Falls das nicht geholfen hat überprüfen sie ob Ihre Maus eine Baterrie benötigt und ob sie eingeschaltet ist."),
+    TON("Überprüfen Sie die Lautstärkeeinstellungen, stellen Sie sicher, dass die Lautsprecher korrekt angeschlossen sind und aktualisieren Sie die Audiotreiber.");
 
     private String antwort;
  
