@@ -29,6 +29,14 @@ public class Main {
                 System.out.println(Antworten.WLAN.getAntwort());
                 System.out.println(jaNein);
 
+            } else if (message.contains("mikrofon")) {
+                System.out.println(Antworten.MIKROFON.getAntwort());
+                System.out.println(jaNein);
+
+            } else if (message.contains("ton")) {
+                System.out.println(Antworten.TON.getAntwort());
+                System.out.println(jaNein);
+
             } else if (message.contains("bildschirm") || message.contains("monitor")) {
                 System.out.println(Antworten.BILDSCHIRM.getAntwort());
                 System.out.println(jaNein);
