@@ -12,6 +12,7 @@ public class Main {
         Scanner reader = new Scanner(System.in);  // Erstellung eines neuen Scanner-Objektes
         System.out.println("Gib eine Frage ein: ");
 
+        // Erstelle eine Schleife, die läuft solange 'running' true ist
         while (running) {
 
             // Lese die nächste Eingabe aus und wandle sie in Kleinbuchstaben um
