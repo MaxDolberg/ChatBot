@@ -9,6 +9,8 @@ public enum Antworten {
     WEITERLEITUNG("Bei dieser Frage kann ich leider nicht weiterhelfen. Bitte kontaktieren Sie den Kundensupport unter folgender Nummer: 012 3456789"),
     BILDSCHIRM("Wenn Sie ein Problem mit Ihrem Bildschirm haben, sollten Sie am besten Ihren Monitor vom PC trennen und erneut anschließen."),
     BILDSCHIRM2("Da die erste Lösung nicht geholfen hat, ziehen Sie den Stromstecker vom Monitor raus und warten Sie 10 Sekunden. Danach stecken Sie ihn bitte wieder ein und probieren es erneut.");
+    TASTATUR("Wenn Sie ein Problem mit Ihrer Tastatur haben, entfernen Sie die Tastatur einmal von Ihrem PC für einige Zeit und schließen Sie die Tastatur erneut an"),
+    
     
     private String antwort;
  
