@@ -31,15 +31,15 @@ public class Main {
                 System.out.println(Antworten.WLAN.getAntwort());
                 System.out.println(jaNein);
 
-            } else if (message.contains("mikrofon")) {
+            } else if (message.contains("mikrofon") || message.contains("mikro")) {
                 System.out.println(Antworten.MIKROFON.getAntwort());
                 System.out.println(jaNein);
 
-            } else if (message.contains("ton")) {
+            } else if (message.contains("ton") || message.contains("sound")) {
                 System.out.println(Antworten.TON.getAntwort());
                 System.out.println(jaNein);
 
-            } else if (message.contains("computer")) {
+            } else if (message.contains("computer") || message.contains("pc")) {
                 System.out.println(Antworten.COMPUTER.getAntwort());
                 System.out.println(jaNein);
 
