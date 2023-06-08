@@ -15,7 +15,7 @@ public enum Antworten {
     MAUS2("Falls das nicht geholfen hat überprüfen sie ob Ihre Maus eine Baterrie benötigt und ob sie eingeschaltet ist."),
     MIKROFON("Überprüfen Sie die Lautstärkeeinstellungen, stellen Sie sicher, dass die Lautsprecher korrekt angeschlossen sind und aktualisieren Sie die Audiotreiber."),
     TON("Überprüfen Sie die Lautstärkeeinstellungen, stellen Sie sicher, dass die Lautsprecher korrekt angeschlossen sind und aktualisieren Sie die Audiotreiber."),
-    PC("Kontrollieren Sie ob der Computer ordnungsgemäß am Stromnetz angeschlossen ist."),
+    COMPUTER("Kontrollieren Sie ob der Computer ordnungsgemäß am Stromnetz angeschlossen ist."),
     LAN("Vergewissern Sie sich, dass das LAN-Kabel nicht locker ist. Sollte dies nicht helfen, so können Sie das Kabel bei Bedarf auch austauschen.");
     
     private String antwort;

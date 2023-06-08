@@ -37,6 +37,15 @@ public class Main {
                 System.out.println(Antworten.TON.getAntwort());
                 System.out.println(jaNein);
 
+            } else if (message.contains("computer")) {
+                System.out.println(Antworten.COMPUTER.getAntwort());
+                System.out.println(jaNein);
+
+            } else if (message.contains("lan")) {
+                System.out.println(Antworten.LAN.getAntwort());
+                System.out.println(jaNein);
+
+
             } else if (message.contains("bildschirm") || message.contains("monitor")) {
                 System.out.println(Antworten.BILDSCHIRM.getAntwort());
                 System.out.println(jaNein);
