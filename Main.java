@@ -6,6 +6,8 @@ public class Main {
         Boolean running = true;
         Boolean drucker2 = false;
         Boolean bildschirm2 = false;
+        Boolean tastatur2 = false;
+        Boolean maus2 = false;
         String jaNein = "Hat Ihnen diese Antwort geholfen? \n 1 - Ja \n 2 - Nein";
 
         System.out.println(Antworten.HALLO.getAntwort());
@@ -25,7 +27,7 @@ public class Main {
                 System.out.println(jaNein);
                 drucker2 = true;
 
-            } else if (message.contains("wlan")) {
+            } else if (message.contains("wlan") || message.contains("w-lan")) {
                 System.out.println(Antworten.WLAN.getAntwort());
                 System.out.println(jaNein);
 
@@ -45,11 +47,20 @@ public class Main {
                 System.out.println(Antworten.LAN.getAntwort());
                 System.out.println(jaNein);
 
-
             } else if (message.contains("bildschirm") || message.contains("monitor")) {
                 System.out.println(Antworten.BILDSCHIRM.getAntwort());
                 System.out.println(jaNein);
                 bildschirm2 = true;
+
+            } else if (message.contains("tastatur") || message.contains("keyboard")) {
+                System.out.println(Antworten.TASTATUR.getAntwort());
+                System.out.println(jaNein);
+                tastatur2 = true;
+
+            } else if (message.contains("maus") || message.contains("mouse")) {
+                System.out.println(Antworten.MAUS.getAntwort());
+                System.out.println(jaNein);
+                maus2 = true;
 
             // Abfrage, ob der Nutzer mit Ja oder Nein auf die Fragen vom ChatBot antwortet
             } else if (message.equals("1") || message.equals("ja")) {
@@ -68,6 +79,20 @@ public class Main {
                 if (bildschirm2) {
                     System.out.println(Antworten.BILDSCHIRM2.getAntwort());
                     bildschirm2 = false;
+                    System.out.println(jaNein);
+                    continue;
+                }
+
+                if (tastatur2) {
+                    System.out.println(Antworten.TASTATUR2.getAntwort());
+                    tastatur2 = false;
+                    System.out.println(jaNein);
+                    continue;
+                }
+
+                if (maus2) {
+                    System.out.println(Antworten.MAUS2.getAntwort());
+                    maus2 = false;
                     System.out.println(jaNein);
                     continue;
                 }
