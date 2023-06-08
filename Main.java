@@ -8,7 +8,7 @@ public class Main {
         Boolean bildschirm2 = false;
         Boolean tastatur2 = false;
         Boolean maus2 = false;
-        String jaNein = "Hat Ihnen diese Antwort geholfen? \n 1 - Ja \n 2 - Nein";
+        String jaNein = "\n Hat Ihnen diese Antwort geholfen? \n 1 - Ja \n 2 - Nein";
 
         System.out.println(Antworten.HALLO.getAntwort());
         Scanner reader = new Scanner(System.in);  // Erstellung eines neuen Scanner-Objektes
